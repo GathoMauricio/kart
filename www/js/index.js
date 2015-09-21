@@ -9,7 +9,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        playAudio('sound/latido.mp3');
+
     },
     // deviceready Event Handler
     //
@@ -17,6 +17,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        playAudio('sound/latido.mp3');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
